@@ -1,0 +1,319 @@
+.c_title { padding-left: 10px; color: #47295e; position: relative; -webkit-animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both; animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both; }
+.c_title::after {  top: 0px; position: absolute; content: ''; display: block; background-color: #ffc100; border-radius: 50%; }
+.cc_title { font-weight: 500; margin-top: -20px; }
+.y_color { color: #ffc100; }
+.p_color { color: #7258a8; }
+
+/* 회사개요 */
+#summary .sum_box { background: url('../img/cont/sum_bg.jpg') no-repeat center / cover; text-align: center; }
+#summary .sum_box .txt_box { display: inline-block; }
+#summary .sum_box .txt_box p { line-height: 2; color: #fff; font-weight: 600; }
+
+/* 인사말 */
+#greeting .gr_box { text-align: center; }
+#greeting .gr_box img { display: block; margin-right: auto; margin-left: auto; }
+#greeting .gr_box .sign span { font-weight: 600;  }
+
+/* vision&mission */
+#mission .ms_box .mv { text-align: center; }
+#mission .ms_box .mv .title { margin-bottom: 10px; font-weight: 500; }
+#mission .ms_box .mv .txt span { color: #999999; display: block; font-weight: 500; }
+
+/* CI 소개 */
+.p_title { color: #999; }
+.p_title::before { content: ''; display:inline-block; height: 1px; background-color: #cfd3c6; vertical-align: middle; }
+#ci .ci_box .top_box .txt_box { text-align: center; }
+#ci .ci_box .top_box .txt_box .txt span { display: block; line-height: 1.5; color: #333333; }
+#ci .ci_box .bt_box .bt_list li .title { margin-right: auto; margin-left: auto; background: no-repeat center / cover; position: relative; }
+#ci .ci_box .bt_box .bt_list li .title span { color: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; width: 100%; }
+#ci .ci_box .bt_box .bt_list .b1 .title { background-image: url('../img/cont/ci_img02.png'); }
+#ci .ci_box .bt_box .bt_list .b2 .title { background-image: url('../img/cont/ci_img03.png'); }
+#ci .ci_box .bt_box .bt_list .b3 .title { background-image: url('../img/cont/ci_img04.png'); }
+#ci .ci_box .bt_box .bt_list li .txt span { line-height: 1.5; display: block; text-align: center; width: 100%; color: #333333; }
+
+/* 연혁 */
+#history .his_box .his_list { position: relative; }
+#history .his_box .his_list .year { font-weight: 600; color: #e0dde2; }
+#history .his_box .his_list dd { display: flex; align-items: baseline; }
+#history .his_box .his_list dd .month { color: #7051a8; font-weight: 600; }
+#history .his_box .his_list dd .txt { color: #333; }
+
+/* 연구소 소개 */
+#intro .intro_box .intro_top .frame .txt_box p,
+#intro .intro_box .intro_bt .txt { color: #333; }
+#intro .intro_box .intro_top .frame .txt_box .txt { line-height: 1.8; }
+#intro .intro_box .img { text-align: center; }
+#intro .intro_box .intro_bt .title { color: #47295e; }
+
+/* 면역세포 치료제 */
+#immune .imm_box .t_frame .title { font-weight: 500; }
+#immune .imm_box .t_frame .title span,
+#immune .imm_box .t_frame .txt span { line-height: 1.8; }
+#immune .imm_box .t_frame .title span:not(.y_color) { display: block; text-align: center; }
+#immune .imm_box .t_frame .img { text-align: center; }
+
+/* 파이프라인 */
+#pipeline .pipe_box .t_frame .txt span { display: block; line-height: 1.8; }
+
+/* 파트너쉽 */
+.partner_list { flex-wrap: wrap; }
+.partner_list li { border: 1px solid #ccc; margin-top: -1px; margin-left: -1px; position: relative; }
+.partner_list li img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) }
+
+/* 채용정보 */
+#info .info_box .t_frame .img { text-align: center; }
+#info .info_box .t_frame .txt span { display: block; line-height: 1.8; }
+
+/* 오시는 길 */
+#map .map_box .map_bt .title { display: inline-block; color: #fff; font-weight: 500; background-color: #ffc100; border-radius: 35px; }
+#map .map_box .map_bt .t_list dt { align-items: center; }
+#map .map_box .map_bt .t_list dd { color: #666; line-height: 1.8; }
+
+
+/*** Mobile ***/
+@media screen and (min-width:1px) and (max-width:768px) {
+    #mqContents { padding: 50px 0 45px 0; }
+
+    .c_title { font-size: 20px; margin-bottom: 32px; }
+    .c_title::after { width: 5px; height: 5px;  left: 1px; }
+    .cc_title { margin-bottom: 45px; }
+
+    #summary .sum_box { padding: 35px; }
+    #summary .sum_box .txt_box { padding: 35px 20px; background: url('../img/cont/sum_img01-m.png') no-repeat center; }
+    #summary .sum_box .txt_box p { font-size: 14px; }
+    #summary .sum_box .txt_box p .t_big { font-size: 25px; }
+
+    #greeting .gr_box { font-size: 14px; }
+    #greeting .gr_box img:first-of-type { width: 150px; margin-bottom: 35px; }
+    #greeting .gr_box .txt_box:first-of-type { margin-top: 40px; }
+    #greeting .gr_box .txt_box:not(:last-of-type) { margin-bottom: 25px; }
+    #greeting .gr_box .sign { margin-top: 50px; }
+    
+    #mission .ms_box .mv:first-of-type { margin-bottom: 30px; }
+    #mission .ms_box .mv img { width: 45%; margin-bottom: 25px; }
+    #mission .ms_box .mv .title { font-size: 28px; }
+
+    .p_title { font-size: 19px; margin-bottom: 25px; }
+    .p_title::before { width: 40px; margin-right: 10px; }
+    #ci .ci_box .top_box .txt_box { margin-bottom: 100px; }
+    #ci .ci_box .top_box .txt_box img { margin-bottom: 40px; }
+    #ci .ci_box .top_box .txt_box .txt span { font-size: 14px; }
+    #ci .ci_box .bt_box .bt_list li:not(:last-of-type) { margin-bottom: 30px; }
+    #ci .ci_box .bt_box .bt_list li .title { width: 150px; height: 150px; margin-bottom: 30px; }
+    #ci .ci_box .bt_box .bt_list li .title span { font-size: 22px; }
+    #ci .ci_box .bt_box .bt_list li .txt span { font-size: 14px; }
+
+    #history .his_box .his_list { margin-bottom: 60px; }
+    #history .his_box .his_list .year { font-size: 30px; top: -42px; } 
+    #history .his_box .his_list dd:not(:last-of-type) { margin-bottom: 15px; }
+    #history .his_box .his_list dd .month { font-size: 20px; margin-right: 10px; }
+    #history .his_box .his_list dd .txt { font-size: 16px; }
+
+    #intro .intro_box .intro_top { margin-bottom: 90px; }
+    #intro .intro_box .intro_top .frame { margin-bottom: 50px; }
+    #intro .intro_box .intro_top .frame .txt_box p,
+    #intro .intro_box .intro_bt .txt { font-size: 14px; }
+    
+    #intro .intro_box .intro_top .frame img { margin-bottom: 10px; }
+    #intro .intro_box .intro_top .frame .txt_box .title { margin-bottom: 10px; }
+    #intro .intro_box .intro_bt .title { margin-top: 17px; }
+    
+    #immune .imm_box .t_frame:not(:last-of-type) { margin-bottom: 100px; }
+    #immune .imm_box .t_frame .title { margin-bottom: 40px; }
+    #immune .imm_box .t_frame .img { margin: 30px 0; }
+
+    .mb50 { margin-bottom: 25px; }
+
+    #pipeline .pipe_box .t_frame { margin-bottom: 80px; }
+    #pipeline .pipe_box .t_frame .title { margin-bottom: 20px; }
+    #pipeline .pipe_box .t_frame .txt { margin-bottom: 17px; }
+
+    .partner_list li { width: 50%; height: 75px; }
+
+    #info .info_box .t_frame:not(:last-of-type) { margin-bottom: 80px; }
+    #info .info_box .t_frame .txt { padding-left: 55px; }
+    #info .info_box .t_frame img { width: 50%; }
+
+    .root_daum_roughmap { height: 250px; }
+    #map .map_box .map_top { margin-bottom: 50px; }
+    #map .map_box .map_top .map_title { font-size: 13px; margin-top: 13px; }
+    #map .map_box .map_bt .title { font-size: 18px; padding: 5px 13px; margin-bottom: 15px; }
+    #map .map_box .map_bt .t_list:not(:last-of-type) { margin-bottom: 22px; }
+    #map .map_box .map_bt .t_list dt img { margin-right: 10px; width: 47px; }
+    #map .map_box .map_bt .t_list dd { padding-left: 55px; word-break: keep-all; word-wrap: break-word; }
+}
+
+/*** Mobile & Tablet ***/
+@media screen and (min-width:1px) and (max-width:1399px) {
+    #summary .sum_box .txt_box { background-size: 100% 100%; }
+
+    #greeting .gr_box img { max-width: 100%; }
+
+    #intro .intro_box .intro_top .frame { text-align: center; }
+
+    .partner_list li img { width: 50%; }
+    
+} 
+
+/*** Tablet ***/
+@media screen and (min-width:768px) and (max-width:1399px) {
+    #mqContents { padding: 70px 0 60px 0; }
+
+    .c_title { font-size: 30px; margin-bottom: 45px; }
+    .c_title::after { width: 8px; height: 8px; left: -3px; }
+    .cc_title { margin-bottom: 60px; }
+
+    #summary .sum_box { padding: 55px 0; }
+    #summary .sum_box .txt_box { padding: 55px 30px; }
+    #summary .sum_box .txt_box p { font-size: 19px; }
+    #summary .sum_box .txt_box p .t_big { font-size: 29px; }
+
+    #greeting .gr_box { font-size: 19px; }
+    #greeting .gr_box img:first-of-type { margin-bottom: 45px; }
+    #greeting .gr_box .txt_box:first-of-type { margin-top: 60px; }
+    #greeting .gr_box .txt_box:not(:last-of-type) { margin-bottom: 35px; }
+    #greeting .gr_box .txt_box span { display: block; }
+    #greeting .gr_box .sign { margin-top: 90px; }
+
+    #mission .ms_box .mv:first-of-type { margin-right: 50px; }
+    #mission .ms_box .mv img { margin-bottom: 35px; }
+    #mission .ms_box .mv .title { font-size: 35px; }
+
+    .p_title { font-size: 23px; margin-bottom: 35px; }
+    .p_title::before { width: 60px; margin-right: 15px; }
+    #ci .ci_box .top_box .txt_box { margin-bottom: 150px; }
+    #ci .ci_box .top_box .txt_box img { margin-bottom: 60px; }
+    #ci .ci_box .top_box .txt_box .txt span { font-size: 19px; }
+    #ci .ci_box .bt_box .bt_list li .title { width: 250px; height: 250px; margin-bottom: 40px; }
+    #ci .ci_box .bt_box .bt_list li .title span { font-size: 28px; }
+    #ci .ci_box .bt_box .bt_list li .txt span { font-size: 19px; }
+
+    #history .his_box .his_list { margin-bottom: 80px; }
+    #history .his_box .his_list .year { font-size: 50px; top: -42px; } 
+    #history .his_box .his_list dd { padding-left: 170px; }
+    #history .his_box .his_list dd:not(:last-of-type) { margin-bottom: 20px; }
+    #history .his_box .his_list dd .month { font-size: 29px; margin-right: 15px; }
+    #history .his_box .his_list dd .txt { font-size: 22px; }
+
+    #intro .intro_box .intro_top { margin-bottom: 150px; }
+    #intro .intro_box .intro_top .frame { margin-bottom: 70px; }
+    #intro .intro_box .intro_top .frame img { margin-bottom: 20px; }
+    #intro .intro_box .intro_top .frame .txt_box p,
+    #intro .intro_box .intro_bt .txt { font-size: 19px; }
+    #intro .intro_box .intro_top .frame .txt_box .title { margin-bottom: 20px; }
+    #intro .intro_box .intro_bt .title { margin-top: 25px; }
+    
+    #immune .imm_box .t_frame:not(:last-of-type) { margin-bottom: 180px; }
+    #immune .imm_box .t_frame .title { margin-bottom: 60px; }
+    #immune .imm_box .t_frame .img { margin: 40px 0; }
+
+    .mb50 { margin-bottom: 30px; }
+    
+    #pipeline .pipe_box .t_frame { margin-bottom: 100px; }
+    #pipeline .pipe_box .t_frame .title { margin-bottom: 30px; }
+    #pipeline .pipe_box .t_frame .txt { margin-bottom: 25px; }
+
+    .partner_list li { width: 33.3%; height: 120px; }
+    
+    #info .info_box .t_frame:not(:last-of-type) { margin-bottom: 120px; }
+    #info .info_box .t_frame .txt { padding-left: 80px; }
+
+    #map .map_box .map_top { margin-bottom: 70px; }
+    #map .map_box .map_top .map_title { font-size: 19px; margin-top: 18px; }
+    #map .map_box .map_bt .title { font-size: 24px; padding: 7px 17px; margin-bottom: 20px; }
+    #map .map_box .map_bt .t_list:not(:last-of-type) { margin-bottom: 35px; }
+    #map .map_box .map_bt .t_list dt img { margin-right: 15px; }
+    #map .map_box .map_bt .t_list dd { padding-left: 75px; }
+}
+
+/*** Tablet & Desktop ***/
+@media screen and (min-width:768px) {
+    #summary .sum_box .txt_box { background: url('../img/cont/sum_img01.png') no-repeat center; }
+
+    #mission .ms_box { display: flex; }
+    #mission .ms_box .mv { width: 50%; }
+    
+    #ci .ci_box .bt_box .bt_list { display: flex; }
+    #ci .ci_box .bt_box .bt_list li { width: 33.3%; }
+
+    #history .his_box { display: flex; justify-content: center; }
+    #history .his_box .his_list .year { left: 0; position: absolute; }
+
+    #intro .intro_box .intro_top .frame .txt_box .txt span { display: block; }
+    
+}
+
+/*** Desktop ***/
+@media screen and (min-width:1400px) {
+    #mqContents { padding: 100px 0 90px 0; }
+
+    .c_title { font-size: 40px; margin-bottom: 65px; }
+    .c_title::after { width: 10px; height: 10px;  left: -5px; }
+    .cc_title { margin-bottom: 90px; }
+
+    #summary .sum_box { padding: 75px 0; }
+    #summary .sum_box .txt_box { padding: 75px 40px; }
+    #summary .sum_box .txt_box p { font-size: 24px; }
+    #summary .sum_box .txt_box p .t_big { font-size: 34px; }
+
+    #greeting .gr_box { font-size: 24px; }
+    #greeting .gr_box img:first-of-type { margin-bottom: 65px; }
+    #greeting .gr_box .txt_box:first-of-type { margin-top: 80px; }
+    #greeting .gr_box .txt_box:not(:last-of-type) { margin-bottom: 50px; }
+    #greeting .gr_box .txt_box span { display: block; }
+    #greeting .gr_box .sign { margin-top: 120px; }
+
+    #mission .ms_box .mv img { margin-bottom: 50px; }
+    #mission .ms_box .mv .title { font-size: 44px; }
+
+    .p_title { font-size: 28px; margin-bottom: 45px; }
+    .p_title::before { width: 80px; margin-right: 19px; }
+    #ci .ci_box .top_box .txt_box { margin-bottom: 200px; }
+    #ci .ci_box .top_box .txt_box img { margin-bottom: 80px; }
+    #ci .ci_box .top_box .txt_box .txt span { font-size: 24px; }
+    #ci .ci_box .bt_box .bt_list li .title { width: 300px; height: 300px; margin-bottom: 50px; }
+    #ci .ci_box .bt_box .bt_list li .title span { font-size: 32px; }
+    #ci .ci_box .bt_box .bt_list li .txt span { font-size: 24px; }
+
+    #history .his_box .his_list { margin-bottom: 115px; }
+    #history .his_box .his_list .year { font-size: 70px; top: -42px; } 
+    #history .his_box .his_list dd { padding-left: 230px; }
+    #history .his_box .his_list dd:not(:last-of-type) { margin-bottom: 30px; }
+    #history .his_box .his_list dd .month { font-size: 34px; margin-right: 20px; }
+    #history .his_box .his_list dd .txt { font-size: 28px; }
+
+    #intro .intro_box .intro_top { margin-bottom: 180px; }
+    #intro .intro_box .intro_top .frame { display: flex; margin-bottom: 100px; }
+    #intro .intro_box .intro_top .frame img { margin-right: 40px; }
+
+    #intro .intro_box .intro_top .frame .txt_box p,
+    #intro .intro_box .intro_bt .txt { font-size: 24px; }
+    #intro .intro_box .intro_top .frame .txt_box .title { margin-bottom: 90px; }
+    #intro .intro_box .intro_bt .title { margin-top: 35px; }
+    #intro .intro_box .intro_bt .title,
+    #intro .intro_box .intro_bt .txt { padding-left: 80px; }
+
+    #immune .imm_box .t_frame:not(:last-of-type) { margin-bottom: 260px; }
+    #immune .imm_box .t_frame .title { margin-bottom: 80px; }
+    #immune .imm_box .t_frame .txt span { display: block; }
+    #immune .imm_box .t_frame .img { margin: 60px 0; }    
+
+    .mb50 { margin-bottom: 50px; }
+
+    #pipeline .pipe_box .t_frame { margin-bottom: 160px; }
+    #pipeline .pipe_box .t_frame .title { margin-bottom: 40px; }
+    #pipeline .pipe_box .t_frame .txt { margin-bottom: 35px; }
+
+    .partner_list li { width: 25%; height: 150px; }
+    
+    #info .info_box .t_frame:not(:last-of-type) { margin-bottom: 160px; }
+    #info .info_box .t_frame .txt { padding-left: 110px; }
+
+    #map .map_box .map_top { margin-bottom: 100px; }    
+    #map .map_box .map_top .map_title { font-size: 22px; margin-top: 25px; }
+    #map .map_box .map_bt .title { font-size: 28px; padding: 10px 25px; margin-bottom: 30px; }    
+    #map .map_box .map_bt .t_list:not(:last-of-type) { margin-bottom: 45px; }
+    #map .map_box .map_bt .t_list dt img { margin-right: 20px; }
+    #map .map_box .map_bt .t_list dd { padding-left: 75px; }
+}
+

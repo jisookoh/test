@@ -1,0 +1,22 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+html,body{background-color: #fff; font-family: 'NanumSquare', sans-serif; font-weight: 400; letter-spacing: -0.9px; color: #222; }
+a{text-decoration: none; color: inherit;}
+ul, ol, li{list-style-type: none;}
+#container{position: relative;}
+img { max-width: 100%; height: auto; border: 0 none; font-size: 0;line-height: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+input{font-family: inherit; -webkit-border-radius: 0; border: 0;}
+textarea{resize:none;}
+p, span { word-wrap: break-word; word-break: keep-all; }
+.clearfix:after{
+	content:'';
+	clear:both;
+	display:block;
+}
+.root_daum_roughmap { width: 100% !important; }
+.img_box { position: relative; overflow: hidden; }
+.img_box img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+.text_ell { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.text_ell3 { overflow: hidden; text-overflow: ellipsis;	display: -webkit-box;	-webkit-line-clamp: 3; /* 라인수 */	-webkit-box-orient: vertical;	word-wrap:break-word; 	line-height: 1.2em;	height: 3.6em; }
+.hide { position: absolute; top: -9999px; visibility: hidden; }
